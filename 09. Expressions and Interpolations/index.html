@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" ng-app = 'MsgApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>Expressions and Interpolations</title>
+    <script type="text/javascript" src="../angular.min.js">
+
+    </script>
+    <script type="text/javascript" src="app.js">
+
+    </script>
+  </head>
+  <body>
+
+    <h1>Expressions and Interpolations</h1>
+    <div ng-controller="MsgController">
+      {{name}} has a message for you : <br>
+      {{sayMessage()}}
+      <!-- {{madbvjbsvb}} Wont show TypeError and will give blank value -->
+      <div>
+        <br><br><br>
+        <button ng-click = 'feedYaakov()' type="button" name="button">Feed Yaakov</button>
+        <br>
+        <img ng-src="images/yaakov_{{stateOfBeing}}.png" alt="">
+      </div>
+    </div>
+
+  </body>
+
+</html>
